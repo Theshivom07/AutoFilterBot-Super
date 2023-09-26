@@ -59,7 +59,7 @@ IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "✅ I Found: <code>{query}</code>\
 FILE_CAPTION = environ.get("FILE_CAPTION", "<i>{file_name}</i>\n\nᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴄʟᴏsᴇ ʙᴜᴛᴛᴏɴ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ sᴇᴇɴ ᴛʜᴇ ᴍᴏᴠɪᴇ")
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 SHORTLINK_URL = environ.get("SHORTLINK_URL", "apnashortener.in")
-SHORTLINK_API = environ.get("SHORTLINK_API", "3213ca80ea205284597dba4b6fc808c18005a38c)
+SHORTLINK_API = environ.get("SHORTLINK_API", "3213ca80ea205284597dba4b6fc808c18005a38c")
 WELCOME_TEXT = environ.get("WELCOME_TEXT", "Hello {mention}, Welcome to {title} group!")
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/ultroidofficial/149")
 

@@ -233,8 +233,11 @@ def get_file_id(msg: Message):
                 setattr(obj, "message_type", message_type)
                 return obj
 
-#online streaming & fast download features
-def get_media_from_message(message: "Message") -> Any:
+from pyrogram.types import Message
+from typing import Optional
+
+def get_media_from_message(message: "Message") -> Optional[Message]:
+    # Define the supported media types
     media_types = (
         "audio",
         "document",
@@ -245,17 +248,19 @@ def get_media_from_message(message: "Message") -> Any:
         "voice",
         "video_note",
     )
+
+    # Iterate through the media types and return the first found media
     for attr in media_types:
         media = getattr(message, attr, None)
         if media:
             return media
 
+    # If no supported media type is found, return None
+    return None
 
 def get_hash(media_msg: Message) -> str:
+    # Get the media from the message
     media = get_media_from_message(media_msg)
+
+    # Generate a hash using the file_unique_id (first 6 characters)
     return getattr(media, "file_unique_id", "")[:6]
-            
-            
-            
-            
-            

@@ -1,10 +1,10 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+to+advance+auto+filter+bot;Created+by+HANSAKA!;A+advance+and+powerfully+repo!;And+more+features!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+to+advance+auto+filter+bot;Created+by+Ultroid+X+HANSAKA!;A+advance+and+powerfully+repo!;And+more+features!)
 </p>
 <p align="center">
-  <img src="https://graph.org/file/a66dbf46acf369e26d48a.jpg" alt="ADV AUTO FILTER BOT">
+  <img src="https://graph.org/file/95aa4d3146e78348a3637.jpg" alt="Ultroid  x AdV AUTO FILTER BOT">
 </p>
 <h1 align="center">
-  <b>ADV Auto Filter Bot</b>
+  <b>Ultroid Auto Filter Bot</b>
 </h1>
 
 

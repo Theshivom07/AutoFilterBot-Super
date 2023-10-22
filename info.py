@@ -15,9 +15,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Auto_Filters_Bot')
-API_ID = int(environ.get('API_ID', '1463957'))
-API_HASH = environ.get('API_HASH', '17bbc6e28fb5f22d4cc0220e0175a700')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6495662595:AAEWMhbLxFB2x9q4-As4vEDYqfdcxObbCKc')
+API_ID = int(environ.get('API_ID', '4410228'))
+API_HASH = environ.get('API_HASH', 'e73c6f2e8842acdeb8bf8c18628bb772')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6058704972:AAFpmd9wZx254BeHwwtGWMkYy6H7dqwX3bE')
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot pics and stickers
@@ -37,7 +37,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://Cluster0:Cluster0@cluster0.c07xkuf.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 

@@ -26,15 +26,15 @@ PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg h
 
 
 # Bot Admins
-ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '').split()]
+ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '1700825627').split()]
 auth_users = [int(auth_users) if id_pattern.search(auth_users) else auth_users for auth_users in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # Channels
-INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '').split()]
+INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1001872448417').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001841872891'))
 
 # MongoDB information
 DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://Cluster0:Cluster0@cluster0.c07xkuf.mongodb.net/?retryWrites=true&w=majority")
@@ -68,9 +68,9 @@ WELCOME_TEXT = environ.get("WELCOME_TEXT", "Hello {mention}, Welcome to {title} 
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/ultroidofficial/149")
 
 # stream features vars
-F2LINK_C = int(environ.get("F2LINK_C", "-1001696019751"))
-ON_DWNLD = environ.get("ON_DWNLD", "ultroid-moviztube.onrender.com")
-ON_WATCH = environ.get("ON_WATCH", "ultroid-moviztube.onrender.com")
+F2LINK_C = int(environ.get("F2LINK_C", "-1001872448417"))
+ON_DWNLD = environ.get("ON_DWNLD", "https://ultroid-moviztube-b3tn.onrender.com")
+ON_WATCH = environ.get("ON_WATCH", "https://ultroid-moviztube-b3tn.onrender.com")
                            
 # Log
 LOG_STR = "Current Cusomized Configurations are:-\n"

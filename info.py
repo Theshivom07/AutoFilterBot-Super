@@ -15,9 +15,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Auto_Filters_Bot')
-API_ID = int(environ.get('API_ID', '4410228'))
-API_HASH = environ.get('API_HASH', 'e73c6f2e8842acdeb8bf8c18628bb772')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6058704972:AAFpmd9wZx254BeHwwtGWMkYy6H7dqwX3bE')
+API_ID = int(environ.get('API_ID', ')
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot pics and stickers
@@ -34,10 +34,10 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1001872448417').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001841872891'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://Cluster0:Cluster0@cluster0.c07xkuf.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = environ.get('DATABASE_URL', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
